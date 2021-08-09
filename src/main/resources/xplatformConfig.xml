@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xplatformConfg>
+	<user_security>
+		<authentication>UME</authentication>
+	</user_security>
+	<external_vendor>
+		<vendorname>SAPGRC</vendorname>
+	</external_vendor>
+	<database_type>
+		<database_name>DEFAULT</database_name>
+	</database_type>
+	<external_applications>
+		<external_app_name>SAP RAR</external_app_name>
+		<external_sys_len>10</external_sys_len>
+	</external_applications>	
+	<master_scheduler>
+		<enable_conn_pool>false</enable_conn_pool>
+	</master_scheduler>
+	<custom_adapter>
+		<menu>hide</menu>
+	</custom_adapter>
+</xplatformConfg>

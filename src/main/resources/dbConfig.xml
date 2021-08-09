@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Database>
+	
+	
+	<table tableName="GLT_CP_QT_RESOURCE" className="com.greenlight.crossapp.dao.tables.TableCPQTResource">
+		<column columnName="RESOURCE_ID" dataType="NUMBER" javaType="Integer" javaName="resourceId" primaryKey="YES" />
+		<column columnName="RESOURCE_NAME" dataType="VARCHAR" javaType="String" javaName="resourceName" />		
+		<column columnName="RESOURCE_DESCR" dataType="VARCHAR" javaType="String" javaName="resourceDesc" />
+		<column columnName="RESOURCE_SYSTEM" dataType="VARCHAR" javaType="String" javaName="resourceSystem" />		
+		<column columnName="RESOURCE_TYPE" dataType="VARCHAR" javaType="String" javaName="resourceType" />
+		<column columnName="EXECUTION_MODE" dataType="VARCHAR" javaType="String" javaName="executionMode" />		
+		<column columnName="INTERNAL_RES_ID" dataType="NUMBER" javaType="Integer" javaName="internalResId" />
+		<column columnName="INTERNAL_RES_TYPE" dataType="VARCHAR" javaType="String" javaName="internalResType" />		
+		<column columnName="CREATED_BY" dataType="NUMBER" javaType="Integer" javaName="createdBy" />
+		<column columnName="CREATION_TIME" dataType="DATETIME" javaType="Timestamp" javaName="creationTime" />		
+		<column columnName="UPDATED_BY" dataType="NUMBER" javaType="Integer" javaName="updatedBy" />
+		<column columnName="UPDATE_TIME" dataType="DATETIME" javaType="Timestamp" javaName="updateTime" />		
+		<column columnName="USER_DEF_01" dataType="VARCHAR" javaType="String" javaName="userDef01" />
+		<column columnName="USER_DEF_02" dataType="VARCHAR" javaType="String" javaName="userDef02" />		
+		<column columnName="USER_DEF_03" dataType="VARCHAR" javaType="String" javaName="userDef03" />
+		<column columnName="USER_DEF_04" dataType="VARCHAR" javaType="String" javaName="userDef04" />		
+		<column columnName="USER_DEF_05" dataType="VARCHAR" javaType="String" javaName="userDef05" />
+		<column columnName="USER_DEF_06" dataType="VARCHAR" javaType="String" javaName="userDef06" />		
+		<column columnName="USER_DEF_07" dataType="VARCHAR" javaType="String" javaName="userDef07" />
+		<column columnName="USER_DEF_08" dataType="VARCHAR" javaType="String" javaName="userDef08" />		
+		<column columnName="USER_DEF_09" dataType="VARCHAR" javaType="String" javaName="userDef09" />
+		<column columnName="USER_DEF_10" dataType="VARCHAR" javaType="String" javaName="userDef10" />		
+	</table>
+	
+	
+</Database>

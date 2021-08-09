@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+        
+  <appender name="info_appender" class="com.greenlight.xplatformadapter.logs.GLCRollingFileAppender">
+    <param name="File" value="$CROSS_APP_HOMElogs/xapp_debug.log"/>
+    <param name="Append" value="true"/>
+    <param name="Threshold" value="INFO"/> 
+	<param name="MaxFileSize" value="5000KB"/> 
+	<param name="MaxBackupIndex" value="10"/> 
+	<layout class="org.apache.log4j.PatternLayout"> 
+		<param name="ConversionPattern" value="%d %-5p %m%n"/> 
+	</layout> 
+  </appender>
+  
+  <appender name="error_appender" class="com.greenlight.xplatformadapter.logs.GLCRollingFileAppender">
+    <param name="File" value="$CROSS_APP_HOMElogs/xapp_error.log"/>
+    <param name="Append" value="true"/>
+    <param name="Threshold" value="ERROR"/> 
+	<param name="MaxFileSize" value="5000KB"/> 
+	<param name="MaxBackupIndex" value="10"/> 
+	<layout class="org.apache.log4j.PatternLayout"> 
+		<param name="ConversionPattern" value="%d %-5p %m%n"/> 
+	</layout> 
+  </appender>
+  
+  <category name="org.apache" additivity="false"> 
+	<appender-ref ref="info_appender"/> 
+  </category> 
+  <category name="net.sf.hibernate" additivity="false"> 
+	<appender-ref ref="info_appender"/> 
+  </category> 
+  	
+  <root>
+    <appender-ref ref="info_appender"/>
+    <appender-ref ref="error_appender"/>
+  </root>
+
+</log4j:configuration>
